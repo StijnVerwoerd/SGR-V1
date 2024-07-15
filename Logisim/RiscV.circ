@@ -399,7 +399,7 @@
       <a name="width" val="7"/>
     </comp>
     <comp lib="0" loc="(270,1680)" name="Constant">
-      <a name="value" val="0x72"/>
+      <a name="value" val="0x73"/>
       <a name="width" val="7"/>
     </comp>
     <comp lib="0" loc="(270,640)" name="Constant">
@@ -471,7 +471,7 @@
     <comp lib="0" loc="(530,1070)" name="NoConnect"/>
     <comp lib="0" loc="(530,1250)" name="NoConnect"/>
     <comp lib="0" loc="(530,1260)" name="NoConnect"/>
-    <comp lib="0" loc="(530,860)" name="NoConnect"/>
+    <comp lib="0" loc="(530,840)" name="NoConnect"/>
     <comp lib="0" loc="(530,870)" name="NoConnect"/>
     <comp lib="0" loc="(530,880)" name="NoConnect"/>
     <comp lib="0" loc="(650,110)" name="Pin">
@@ -862,8 +862,8 @@
     <wire from="(530,810)" to="(650,810)"/>
     <wire from="(530,820)" to="(640,820)"/>
     <wire from="(530,830)" to="(630,830)"/>
-    <wire from="(530,840)" to="(620,840)"/>
-    <wire from="(530,850)" to="(610,850)"/>
+    <wire from="(530,850)" to="(620,850)"/>
+    <wire from="(530,860)" to="(610,860)"/>
     <wire from="(540,1180)" to="(540,1230)"/>
     <wire from="(540,1180)" to="(660,1180)"/>
     <wire from="(540,130)" to="(540,140)"/>
@@ -945,9 +945,9 @@
     <wire from="(610,650)" to="(610,680)"/>
     <wire from="(610,650)" to="(620,650)"/>
     <wire from="(610,680)" to="(620,680)"/>
-    <wire from="(610,850)" to="(610,930)"/>
+    <wire from="(610,860)" to="(610,930)"/>
     <wire from="(610,930)" to="(650,930)"/>
-    <wire from="(620,840)" to="(620,900)"/>
+    <wire from="(620,850)" to="(620,900)"/>
     <wire from="(620,900)" to="(650,900)"/>
     <wire from="(630,830)" to="(630,870)"/>
     <wire from="(630,870)" to="(650,870)"/>
