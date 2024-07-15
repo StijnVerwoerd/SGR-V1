@@ -330,6 +330,10 @@
       <a name="value" val="0x13"/>
       <a name="width" val="7"/>
     </comp>
+    <comp lib="0" loc="(270,860)" name="Constant">
+      <a name="value" val="0x3"/>
+      <a name="width" val="7"/>
+    </comp>
     <comp lib="0" loc="(390,470)" name="Constant">
       <a name="value" val="0x0"/>
       <a name="width" val="7"/>
@@ -338,6 +342,9 @@
       <a name="value" val="0x20"/>
       <a name="width" val="7"/>
     </comp>
+    <comp lib="0" loc="(490,860)" name="NoConnect"/>
+    <comp lib="0" loc="(490,870)" name="NoConnect"/>
+    <comp lib="0" loc="(490,880)" name="NoConnect"/>
     <comp lib="0" loc="(600,110)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
@@ -398,6 +405,26 @@
       <a name="label" val="add"/>
       <a name="output" val="true"/>
     </comp>
+    <comp lib="0" loc="(610,1000)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(610,1030)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(610,1060)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(610,1090)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
     <comp lib="0" loc="(610,510)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
@@ -452,7 +479,37 @@
       <a name="label" val="andi"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(610,780)" name="Pin">
+    <comp lib="0" loc="(610,810)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="lb"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(610,840)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="lh"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(610,870)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="lw"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(610,900)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="lbu"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(610,930)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="lhu"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(610,970)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -481,11 +538,15 @@
     <comp lib="2" loc="(450,630)" name="Demultiplexer">
       <a name="select" val="3"/>
     </comp>
+    <comp lib="2" loc="(450,850)" name="Demultiplexer">
+      <a name="select" val="3"/>
+    </comp>
     <comp lib="2" loc="(460,170)" name="Demultiplexer">
       <a name="select" val="3"/>
     </comp>
     <comp loc="(360,170)" name="compare7bits"/>
     <comp loc="(380,630)" name="compare7bits"/>
+    <comp loc="(380,850)" name="compare7bits"/>
     <comp loc="(500,480)" name="compare7bits"/>
     <comp loc="(500,530)" name="compare7bits"/>
     <wire from="(190,380)" to="(240,380)"/>
@@ -494,9 +555,12 @@
     <wire from="(240,180)" to="(240,380)"/>
     <wire from="(240,180)" to="(260,180)"/>
     <wire from="(240,380)" to="(240,620)"/>
+    <wire from="(240,620)" to="(240,840)"/>
     <wire from="(240,620)" to="(280,620)"/>
+    <wire from="(240,840)" to="(280,840)"/>
     <wire from="(250,160)" to="(260,160)"/>
     <wire from="(270,640)" to="(280,640)"/>
+    <wire from="(270,860)" to="(280,860)"/>
     <wire from="(360,170)" to="(460,170)"/>
     <wire from="(360,220)" to="(360,430)"/>
     <wire from="(360,220)" to="(480,220)"/>
@@ -506,10 +570,13 @@
     <wire from="(380,490)" to="(400,490)"/>
     <wire from="(380,520)" to="(400,520)"/>
     <wire from="(380,630)" to="(450,630)"/>
+    <wire from="(380,850)" to="(450,850)"/>
     <wire from="(390,470)" to="(400,470)"/>
     <wire from="(390,540)" to="(400,540)"/>
     <wire from="(390,600)" to="(390,670)"/>
+    <wire from="(390,670)" to="(390,890)"/>
     <wire from="(390,670)" to="(470,670)"/>
+    <wire from="(390,890)" to="(470,890)"/>
     <wire from="(480,210)" to="(480,220)"/>
     <wire from="(490,590)" to="(540,590)"/>
     <wire from="(490,600)" to="(550,600)"/>
@@ -519,6 +586,11 @@
     <wire from="(490,640)" to="(570,640)"/>
     <wire from="(490,650)" to="(560,650)"/>
     <wire from="(490,660)" to="(550,660)"/>
+    <wire from="(490,810)" to="(610,810)"/>
+    <wire from="(490,820)" to="(600,820)"/>
+    <wire from="(490,830)" to="(590,830)"/>
+    <wire from="(490,840)" to="(580,840)"/>
+    <wire from="(490,850)" to="(570,850)"/>
     <wire from="(500,130)" to="(560,130)"/>
     <wire from="(500,140)" to="(600,140)"/>
     <wire from="(500,150)" to="(590,150)"/>
@@ -574,10 +646,18 @@
     <wire from="(570,650)" to="(570,680)"/>
     <wire from="(570,650)" to="(580,650)"/>
     <wire from="(570,680)" to="(580,680)"/>
+    <wire from="(570,850)" to="(570,930)"/>
+    <wire from="(570,930)" to="(610,930)"/>
     <wire from="(580,160)" to="(580,200)"/>
     <wire from="(580,200)" to="(600,200)"/>
+    <wire from="(580,840)" to="(580,900)"/>
+    <wire from="(580,900)" to="(610,900)"/>
     <wire from="(590,150)" to="(590,170)"/>
     <wire from="(590,170)" to="(600,170)"/>
+    <wire from="(590,830)" to="(590,870)"/>
+    <wire from="(590,870)" to="(610,870)"/>
+    <wire from="(600,820)" to="(600,840)"/>
+    <wire from="(600,840)" to="(610,840)"/>
   </circuit>
   <circuit name="compare7bits">
     <a name="appearance" val="custom"/>
