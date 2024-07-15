@@ -322,15 +322,15 @@
       <a name="label" val="funct7"/>
       <a name="width" val="7"/>
     </comp>
-    <comp lib="0" loc="(250,170)" name="Constant">
+    <comp lib="0" loc="(250,160)" name="Constant">
       <a name="value" val="0x33"/>
       <a name="width" val="7"/>
     </comp>
-    <comp lib="0" loc="(250,480)" name="Constant">
+    <comp lib="0" loc="(250,470)" name="Constant">
       <a name="value" val="0x0"/>
       <a name="width" val="7"/>
     </comp>
-    <comp lib="0" loc="(250,530)" name="Constant">
+    <comp lib="0" loc="(250,540)" name="Constant">
       <a name="value" val="0x20"/>
       <a name="width" val="7"/>
     </comp>
@@ -409,9 +409,9 @@
     <comp lib="2" loc="(460,170)" name="Demultiplexer">
       <a name="select" val="3"/>
     </comp>
-    <comp loc="(290,170)" name="compare7bits"/>
-    <comp loc="(290,480)" name="compare7bits"/>
-    <comp loc="(290,520)" name="compare7bits"/>
+    <comp loc="(360,170)" name="compare7bits"/>
+    <comp loc="(360,480)" name="compare7bits"/>
+    <comp loc="(360,530)" name="compare7bits"/>
     <wire from="(190,380)" to="(240,380)"/>
     <wire from="(190,430)" to="(360,430)"/>
     <wire from="(190,490)" to="(240,490)"/>
@@ -420,15 +420,14 @@
     <wire from="(240,490)" to="(240,520)"/>
     <wire from="(240,490)" to="(260,490)"/>
     <wire from="(240,520)" to="(260,520)"/>
-    <wire from="(250,170)" to="(260,170)"/>
-    <wire from="(250,480)" to="(260,480)"/>
-    <wire from="(250,530)" to="(260,530)"/>
-    <wire from="(280,480)" to="(290,480)"/>
-    <wire from="(290,170)" to="(460,170)"/>
-    <wire from="(290,480)" to="(520,480)"/>
-    <wire from="(290,520)" to="(530,520)"/>
+    <wire from="(250,160)" to="(260,160)"/>
+    <wire from="(250,470)" to="(260,470)"/>
+    <wire from="(250,540)" to="(260,540)"/>
+    <wire from="(360,170)" to="(460,170)"/>
     <wire from="(360,220)" to="(360,430)"/>
     <wire from="(360,220)" to="(480,220)"/>
+    <wire from="(360,480)" to="(520,480)"/>
+    <wire from="(360,530)" to="(530,530)"/>
     <wire from="(480,210)" to="(480,220)"/>
     <wire from="(500,130)" to="(560,130)"/>
     <wire from="(500,140)" to="(600,140)"/>
@@ -444,7 +443,7 @@
     <wire from="(520,90)" to="(570,90)"/>
     <wire from="(530,120)" to="(530,300)"/>
     <wire from="(530,120)" to="(570,120)"/>
-    <wire from="(530,300)" to="(530,520)"/>
+    <wire from="(530,300)" to="(530,530)"/>
     <wire from="(530,300)" to="(570,300)"/>
     <wire from="(540,200)" to="(540,350)"/>
     <wire from="(540,350)" to="(600,350)"/>
@@ -466,6 +465,7 @@
     <wire from="(590,170)" to="(600,170)"/>
   </circuit>
   <circuit name="compare7bits">
+    <a name="appearance" val="custom"/>
     <a name="circuit" val="compare7bits"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="4096.0"/>
