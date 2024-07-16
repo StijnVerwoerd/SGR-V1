@@ -5,10 +5,10 @@
 ### Core:
 
 * **CPU**
-    * OPCODE decoder
+    * ~~OPCODE decoder~~
     * Clock
     * Swirl
-    * 32 bit register
+    * ~~32 bit register~~
     * ROM
     * CACHE (SRAM)
     * PIPELINING
@@ -20,7 +20,6 @@
     * SOUND OUTPUT (BEEPS)
 * DRAM
 * WRAM
-*
 
 
 * **Instructions**
