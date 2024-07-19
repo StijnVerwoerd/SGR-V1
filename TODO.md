@@ -7,8 +7,9 @@
 * **CPU**
     * ~~OPCODE decoder~~
     * Clock
-    * Swirl
+    * ~~Swirl~~
     * ~~32 bit register~~
+    * CONTROL UNIT
     * ROM
     * CACHE (SRAM)
     * PIPELINING
