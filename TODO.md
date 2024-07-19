@@ -7,7 +7,7 @@
 * **CPU**
     * ~~OPCODE decoder~~
     * Clock
-    * Swirl
+    * ~~Swirl~~
     * ~~32 bit register~~
     * ROM
     * CACHE (SRAM)
