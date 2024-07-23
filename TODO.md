@@ -7,17 +7,44 @@
 * **CPU**
     * ~~OPCODE decoder~~
     * Clock
-    * Swirl
+    * ~~Swirl~~
     * ~~32 bit register~~
+    * CONTROL UNIT
     * ROM
     * CACHE (SRAM)
     * PIPELINING
     * ALU
+        * Arithmatic unit
+            * ~~ADD~~
+            * ~~SUB~~
+            * MUL
+            * MULH
+            * MULHU
+            * MULHSU
+            * DIV
+            * DIVU
+            * REM
+            * REMU
+        * ~~Shift unit~~
+            * ~~SLL~~
+            * ~~SRL~~
+            * ~~SRA~~
+        * ~~Compare unit~~
+            * ~~A = B~~
+            * ~~A < B~~
+            * ~~A >= B~~
+        * ~~Logic unit~~
+            * ~~AND~~
+            * ~~OR~~
+            * ~~XOR~~
     * Program Counter 
 * **Input/Output**
     * USB INPUT
+        * Keyboard
     * VGA OUTPUT
-    * SOUND OUTPUT (BEEPS)
+    * SOUND OUTPUT
+        * BEEPS (For errors and confirmations)
+        * AUX
 * DRAM
 * WRAM
 
