@@ -187,23 +187,21 @@
       <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="160" y="1204">InstructionDecoder</text>
       <circ-anchor facing="east" x="270" y="60"/>
       <circ-port dir="in" pin="490,340" x="50" y="60"/>
+      <circ-port dir="out" pin="1080,1010" x="270" y="290"/>
       <circ-port dir="out" pin="1080,1030" x="270" y="940"/>
       <circ-port dir="out" pin="1080,1050" x="270" y="960"/>
       <circ-port dir="out" pin="1080,1070" x="270" y="980"/>
+      <circ-port dir="out" pin="1080,1090" x="270" y="310"/>
       <circ-port dir="out" pin="1080,110" x="270" y="120"/>
       <circ-port dir="out" pin="1080,1110" x="270" y="1000"/>
       <circ-port dir="out" pin="1080,1130" x="270" y="1020"/>
       <circ-port dir="out" pin="1080,1150" x="270" y="1040"/>
+      <circ-port dir="out" pin="1080,1170" x="270" y="1050"/>
       <circ-port dir="out" pin="1080,1190" x="270" y="1060"/>
       <circ-port dir="out" pin="1080,1210" x="270" y="1080"/>
       <circ-port dir="out" pin="1080,1230" x="270" y="1100"/>
       <circ-port dir="out" pin="1080,130" x="270" y="140"/>
       <circ-port dir="out" pin="1080,150" x="270" y="160"/>
-      <circ-port dir="out" pin="1080,190" x="270" y="180"/>
-      <circ-port dir="out" pin="1080,210" x="270" y="200"/>
-      <circ-port dir="out" pin="1080,230" x="270" y="220"/>
-      <circ-port dir="out" pin="1080,250" x="270" y="240"/>
-      <circ-port dir="out" pin="1080,290" x="270" y="260"/>
       <circ-port dir="out" pin="1080,310" x="270" y="280"/>
       <circ-port dir="out" pin="1080,330" x="270" y="300"/>
       <circ-port dir="out" pin="1080,350" x="270" y="320"/>
@@ -214,7 +212,7 @@
       <circ-port dir="out" pin="1080,450" x="270" y="420"/>
       <circ-port dir="out" pin="1080,470" x="270" y="440"/>
       <circ-port dir="out" pin="1080,490" x="270" y="460"/>
-      <circ-port dir="out" pin="1080,50" x="270" y="60"/>
+      <circ-port dir="out" pin="1080,50" x="270" y="180"/>
       <circ-port dir="out" pin="1080,510" x="270" y="480"/>
       <circ-port dir="out" pin="1080,530" x="270" y="500"/>
       <circ-port dir="out" pin="1080,550" x="270" y="520"/>
@@ -228,12 +226,14 @@
       <circ-port dir="out" pin="1080,70" x="270" y="80"/>
       <circ-port dir="out" pin="1080,710" x="270" y="680"/>
       <circ-port dir="out" pin="1080,730" x="270" y="700"/>
+      <circ-port dir="out" pin="1080,750" x="270" y="450"/>
       <circ-port dir="out" pin="1080,770" x="270" y="720"/>
       <circ-port dir="out" pin="1080,790" x="270" y="740"/>
       <circ-port dir="out" pin="1080,810" x="270" y="760"/>
       <circ-port dir="out" pin="1080,830" x="270" y="780"/>
       <circ-port dir="out" pin="1080,850" x="270" y="800"/>
       <circ-port dir="out" pin="1080,870" x="270" y="820"/>
+      <circ-port dir="out" pin="1080,890" x="270" y="370"/>
       <circ-port dir="out" pin="1080,90" x="270" y="100"/>
       <circ-port dir="out" pin="1080,910" x="270" y="840"/>
       <circ-port dir="out" pin="1080,930" x="270" y="860"/>
@@ -285,31 +285,35 @@
       <a name="label" val="S"/>
       <a name="labelfont" val="SansSerif bold 8"/>
     </comp>
-    <comp lib="0" loc="(1080,1010)" name="Tunnel">
-      <a name="label" val="B"/>
-      <a name="labelfont" val="SansSerif bold 8"/>
+    <comp lib="0" loc="(1080,1010)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="lui"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,1030)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="bge"/>
+      <a name="label" val="auipc"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,1050)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="bltu"/>
+      <a name="label" val="ecall"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,1070)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="bgeu"/>
+      <a name="label" val="ebreak"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(1080,1090)" name="Tunnel">
-      <a name="label" val="J"/>
-      <a name="labelfont" val="SansSerif bold 8"/>
+    <comp lib="0" loc="(1080,1090)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="mul"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,110)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -320,41 +324,43 @@
     <comp lib="0" loc="(1080,1110)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="jal"/>
+      <a name="label" val="mulh"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,1130)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="jalr"/>
+      <a name="label" val="mulsu"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,1150)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="lui"/>
+      <a name="label" val="mulu"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(1080,1170)" name="Tunnel">
-      <a name="label" val="U"/>
-      <a name="labelfont" val="SansSerif bold 8"/>
+    <comp lib="0" loc="(1080,1170)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="div"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,1190)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="auipc"/>
+      <a name="label" val="divu"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,1210)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="ecall"/>
+      <a name="label" val="op_rem"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,1230)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="ebreak"/>
+      <a name="label" val="remu"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,130)" name="Pin">
@@ -379,68 +385,58 @@
       <a name="label" val="B"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(1080,190)" name="Pin">
+    <comp lib="0" loc="(1080,190)" name="Tunnel">
+      <a name="label" val="R"/>
+      <a name="labelfont" val="SansSerif bold 8"/>
+    </comp>
+    <comp lib="0" loc="(1080,210)" name="Tunnel">
+      <a name="label" val="I"/>
+      <a name="labelfont" val="SansSerif bold 8"/>
+    </comp>
+    <comp lib="0" loc="(1080,230)" name="Tunnel">
+      <a name="label" val="S"/>
+      <a name="labelfont" val="SansSerif bold 8"/>
+    </comp>
+    <comp lib="0" loc="(1080,250)" name="Tunnel">
+      <a name="label" val="U"/>
+      <a name="labelfont" val="SansSerif bold 8"/>
+    </comp>
+    <comp lib="0" loc="(1080,270)" name="Tunnel">
+      <a name="label" val="J"/>
+      <a name="labelfont" val="SansSerif bold 8"/>
+    </comp>
+    <comp lib="0" loc="(1080,290)" name="Tunnel">
+      <a name="label" val="B"/>
+      <a name="labelfont" val="SansSerif bold 8"/>
+    </comp>
+    <comp lib="0" loc="(1080,310)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="add"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(1080,210)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="mul"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1080,230)" name="Pin">
+    <comp lib="0" loc="(1080,330)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="sub"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(1080,250)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="mulh"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1080,270)" name="Tunnel">
-      <a name="label" val="R"/>
-      <a name="labelfont" val="SansSerif bold 8"/>
-    </comp>
-    <comp lib="0" loc="(1080,290)" name="Pin">
+    <comp lib="0" loc="(1080,350)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="op_sll"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(1080,310)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="mulsu"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1080,330)" name="Pin">
+    <comp lib="0" loc="(1080,370)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="op_slt"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(1080,350)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="mulu"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1080,370)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="op_sltu"/>
-      <a name="output" val="true"/>
-    </comp>
     <comp lib="0" loc="(1080,390)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="div"/>
+      <a name="label" val="op_sltu"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,410)" name="Pin">
@@ -452,25 +448,25 @@
     <comp lib="0" loc="(1080,430)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="divu"/>
+      <a name="label" val="op_slr"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,450)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="op_slr"/>
+      <a name="label" val="op_sra"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,470)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="op_rem"/>
+      <a name="label" val="op_or"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,490)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="op_sra"/>
+      <a name="label" val="op_and"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,50)" name="Pin">
@@ -482,61 +478,61 @@
     <comp lib="0" loc="(1080,510)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="remu"/>
+      <a name="label" val="addi"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,530)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="op_or"/>
+      <a name="label" val="slli"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,550)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="op_and"/>
+      <a name="label" val="slti"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,570)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="addi"/>
+      <a name="label" val="sltiu"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,590)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="slli"/>
+      <a name="label" val="xori"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,610)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="slti"/>
+      <a name="label" val="srli"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,630)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="sltiu"/>
+      <a name="label" val="srai"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,650)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="xori"/>
+      <a name="label" val="ori"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,670)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="srli"/>
+      <a name="label" val="andi"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,690)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="srai"/>
+      <a name="label" val="lb"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,70)" name="Pin">
@@ -548,58 +544,62 @@
     <comp lib="0" loc="(1080,710)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="ori"/>
+      <a name="label" val="lh"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,730)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="andi"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1080,750)" name="Tunnel">
-      <a name="label" val="I"/>
-      <a name="labelfont" val="SansSerif bold 8"/>
-    </comp>
-    <comp lib="0" loc="(1080,770)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="lb"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1080,790)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="lh"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1080,810)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
       <a name="label" val="lw"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(1080,830)" name="Pin">
+    <comp lib="0" loc="(1080,750)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="lbu"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(1080,850)" name="Pin">
+    <comp lib="0" loc="(1080,770)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="lhu"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(1080,870)" name="Pin">
+    <comp lib="0" loc="(1080,790)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="sb"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(1080,890)" name="Tunnel">
-      <a name="label" val="S"/>
-      <a name="labelfont" val="SansSerif bold 8"/>
+    <comp lib="0" loc="(1080,810)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="sh"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1080,830)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="sw"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1080,850)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="beq"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1080,870)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="bne"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1080,890)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="blt"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,90)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -610,31 +610,31 @@
     <comp lib="0" loc="(1080,910)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="sh"/>
+      <a name="label" val="bge"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,930)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="sw"/>
+      <a name="label" val="bltu"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,950)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="beq"/>
+      <a name="label" val="bgeu"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,970)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="bne"/>
+      <a name="label" val="jal"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1080,990)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="blt"/>
+      <a name="label" val="jalr"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1090,1290)" name="Pin">
