@@ -31,26 +31,35 @@ More functionality can be added later, such as the multiplication extension requ
 
 ## Instructions:
 
-    Operation:      Instruction:
-    1. A+B			    ADD/SUB/ADDI/LW/SW/LB/LH/JAR/JALR
-    2. A+B(U) 		  LBU/LHU
-    3. XOR			    XOR/XORI
-    4. A|B			    OR/ORI
-    5. A&B			    AND
-    6. B=A			    BEQ/BNE
-    7. A>=B			    BGE		
-    8. A>=B(U)		  BGEU
-    9. A<<B			    SLL/SLLI/LUI/AUIPC
-    10. A>>B		    SRL/SRLI
-    11. A>>B(sign)	SRA/SRAI
-    12. A<B			    SLT/BLT/		
-    13	A<B(U)		  SLTU/SLTIU/BLTU
-    14. A*B			    MUL/MULH/		
-    15 	A*B(U)		  MULHU/MULHSU
-    16. A/B			    DIV
-    17. A/B(U)		  DIVU
-    18. A%B			    REM
-    19. A%B(U)		  REMU
+| Operation        | Code       | Instruction                            |
+|------------------|------------|----------------------------------------|
+| **Arithmetic**   |            |                                        |
+| A + B            | 0001xx     | ADD / ADDI / LW / SW / LB / LH / JAL / JALR |
+| A - B            | 0101xx     | SUB                                    |
+| A + B (U)        |            | LBU / LHU                              |
+| **Logic**        |            |                                        |
+| XOR              | 001011     | XOR / XORI                             |
+| A \| B           | 001001     | OR / ORI                               |
+| A & B            | 001000     | AND / ANDI                             |
+| **Compare**      |            |                                        |
+| B = A            | 010001     | BEQ / BNE                              |
+| A >= B           | 100011     | BGE                                    |
+| A >= B (U)       |            | BGEU                                   |
+| A < B            | 010010     | SLT / BLT                              |
+| A < B (U)        |            | SLTU / SLTIU / BLTU                    |
+| **Shift**        |            |                                        |
+| A << B           | 001100     | SLL / SLLI                             |
+| A >> B           | 001101     | SRL / SRLI                             |
+| A >> B (sign)    | 001111     | SRA / SRAI                             |
+| **Multiply/Divide** |        |                                        |
+| A * B            |            | MUL / MULH                             |
+| A * B (U)        |            | MULHU / MULHSU                         |
+| A / B            |            | DIV                                    |
+| A / B (U)        |            | DIVU                                   |
+| A % B            |            | REM                                    |
+| A % B (U)        |            | REMU                                   |
+
+
 
 * [0:1] selects which operation gets performed within the subunit
 * [2:3] selects which subunit gets selected for the operation
