@@ -3185,50 +3185,60 @@ xxxxxxx 0000000000
     </comp>
     <comp lib="0" loc="(390,510)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="op_or"/>
+      <a name="label" val="op_and"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
     <comp lib="0" loc="(390,530)" name="Tunnel">
       <a name="facing" val="east"/>
+      <a name="label" val="andi"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(390,560)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="op_or"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(390,580)" name="Tunnel">
+      <a name="facing" val="east"/>
       <a name="label" val="ori"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(390,570)" name="Tunnel">
+    <comp lib="0" loc="(390,620)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="op_xor"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(390,590)" name="Tunnel">
+    <comp lib="0" loc="(390,640)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="xori"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(390,630)" name="Tunnel">
+    <comp lib="0" loc="(390,680)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="op_sll"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(390,650)" name="Tunnel">
+    <comp lib="0" loc="(390,700)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="slli"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(390,680)" name="Tunnel">
+    <comp lib="0" loc="(390,730)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="op_srl"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(390,700)" name="Tunnel">
+    <comp lib="0" loc="(390,750)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="srli"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(390,730)" name="Tunnel">
+    <comp lib="0" loc="(390,780)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="op_sra"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(390,750)" name="Tunnel">
+    <comp lib="0" loc="(390,800)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="srai"/>
       <a name="labelfont" val="SansSerif bold 10"/>
@@ -3251,22 +3261,26 @@ xxxxxxx 0000000000
       <a name="labelfont" val="Dialog bold 12"/>
     </comp>
     <comp lib="0" loc="(450,520)" name="Tunnel">
+      <a name="label" val="AND_Encode"/>
+      <a name="labelfont" val="Dialog bold 12"/>
+    </comp>
+    <comp lib="0" loc="(450,570)" name="Tunnel">
       <a name="label" val="OR_Encode"/>
       <a name="labelfont" val="Dialog bold 12"/>
     </comp>
-    <comp lib="0" loc="(450,580)" name="Tunnel">
+    <comp lib="0" loc="(450,630)" name="Tunnel">
       <a name="label" val="XOR_Encode"/>
       <a name="labelfont" val="Dialog bold 12"/>
     </comp>
-    <comp lib="0" loc="(450,640)" name="Tunnel">
+    <comp lib="0" loc="(450,690)" name="Tunnel">
       <a name="label" val="L_Shift"/>
       <a name="labelfont" val="Dialog bold 12"/>
     </comp>
-    <comp lib="0" loc="(450,690)" name="Tunnel">
+    <comp lib="0" loc="(450,740)" name="Tunnel">
       <a name="label" val="R_Shift"/>
       <a name="labelfont" val="Dialog bold 12"/>
     </comp>
-    <comp lib="0" loc="(450,740)" name="Tunnel">
+    <comp lib="0" loc="(450,790)" name="Tunnel">
       <a name="label" val="R_Shift_Signed"/>
       <a name="labelfont" val="Dialog bold 12"/>
     </comp>
@@ -3295,8 +3309,8 @@ xxxxxxx 0000000000
     </comp>
     <comp lib="0" loc="(750,210)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="op_and"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
+      <a name="label" val="AND_Encode"/>
+      <a name="labelfont" val="Dialog bold 12"/>
     </comp>
     <comp lib="0" loc="(750,240)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -3385,16 +3399,19 @@ xxxxxxx 0000000000
     <comp lib="1" loc="(430,520)" name="OR Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(430,580)" name="OR Gate">
+    <comp lib="1" loc="(430,570)" name="OR Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(430,640)" name="OR Gate">
+    <comp lib="1" loc="(430,630)" name="OR Gate">
       <a name="size" val="30"/>
     </comp>
     <comp lib="1" loc="(430,690)" name="OR Gate">
       <a name="size" val="30"/>
     </comp>
     <comp lib="1" loc="(430,740)" name="OR Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(430,790)" name="OR Gate">
       <a name="size" val="30"/>
     </comp>
     <comp lib="1" loc="(440,70)" name="OR Gate">
@@ -3468,22 +3485,25 @@ xxxxxxx 0000000000
     <wire from="(390,480)" to="(400,480)"/>
     <wire from="(390,510)" to="(400,510)"/>
     <wire from="(390,530)" to="(400,530)"/>
-    <wire from="(390,570)" to="(400,570)"/>
-    <wire from="(390,590)" to="(400,590)"/>
-    <wire from="(390,630)" to="(400,630)"/>
-    <wire from="(390,650)" to="(400,650)"/>
+    <wire from="(390,560)" to="(400,560)"/>
+    <wire from="(390,580)" to="(400,580)"/>
+    <wire from="(390,620)" to="(400,620)"/>
+    <wire from="(390,640)" to="(400,640)"/>
     <wire from="(390,680)" to="(400,680)"/>
     <wire from="(390,700)" to="(400,700)"/>
     <wire from="(390,730)" to="(400,730)"/>
     <wire from="(390,750)" to="(400,750)"/>
+    <wire from="(390,780)" to="(400,780)"/>
+    <wire from="(390,800)" to="(400,800)"/>
     <wire from="(430,130)" to="(450,130)"/>
     <wire from="(430,420)" to="(440,420)"/>
     <wire from="(430,470)" to="(450,470)"/>
     <wire from="(430,520)" to="(450,520)"/>
-    <wire from="(430,580)" to="(450,580)"/>
-    <wire from="(430,640)" to="(450,640)"/>
+    <wire from="(430,570)" to="(450,570)"/>
+    <wire from="(430,630)" to="(450,630)"/>
     <wire from="(430,690)" to="(450,690)"/>
     <wire from="(430,740)" to="(450,740)"/>
+    <wire from="(430,790)" to="(450,790)"/>
     <wire from="(440,70)" to="(460,70)"/>
     <wire from="(450,260)" to="(460,260)"/>
     <wire from="(750,120)" to="(870,120)"/>
